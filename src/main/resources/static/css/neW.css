@@ -1,0 +1,129 @@
+@charset "ISO-8859-1";
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui;
+    background-color: #f2f2f2;
+    font-size: 20px;
+}
+.navbar{
+    background-color: #0b698b;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    height: 50px;
+}
+.nav-list{
+    list-style-type: none;
+}
+
+.nav-list, .list-item{
+    display: inline-block;
+    padding-right:  10px ;
+    background-color: #0b698b;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #f2f2f2;
+    background-color: #0b698b;
+}
+
+.navbar a:hover{
+    color: #9cd3d8;
+}
+.primary-icon{
+    height: 40px;
+    padding-left: 10px;
+    background-color: #0b698b;
+}
+.logo{
+    position: relative;
+}
+
+.title{
+    position: absolute;
+    top: -8px;
+    left: 50px;
+    font-size: 45px;
+    color: #f2f2f2;
+    font-family: Vivaldi;
+    background-color: #0b698B;
+}
+h2{
+	margin-bottom: 16px;
+    font-size: xx-large;
+    margin-top: 64px;
+    margin-left: 392px;
+    font-family: cursive;
+    color: #0b698b;
+}
+.img{
+	position: absolute;
+    top: 112px;
+    left: 760px;
+    width: 500px;
+}
+.box{
+	width: 380px;
+    margin-top: 20px;
+    height: 430px;
+    border: 3px solid black;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    margin-left: 275px;
+    background-color: #DAE8FC;
+    
+}
+.form{
+    background-color: #DAE8FC;
+    padding: 10px;
+}
+label{
+	background-color: #DAE8FC;
+}
+.data{
+    width: 293px;
+    display: block;
+    border-radius: 10px;
+	border: 3px solid #0b698b;
+	padding-left: 5px;
+}
+.error{
+	font-size: xx-small;
+    color: red;
+    background-color: #DAE8FC;
+}
+.star{
+	color: red;
+	background-color: #DAE8FC;
+}
+.button1, .button2, .button3{
+	width: 120px;
+    box-shadow: 1px 1px 2px 1px #0b698b;
+    border-radius: 5px ;
+    border-color: #0b698b;
+    background-color: #9cd3d8;
+    padding-bottom: 3px;
+}
+.button2{
+	top: 545px;
+    position: absolute;
+    left: 318px;
+}
+.button3{
+	margin-top: 21px;
+    position: absolute;
+    left: 401px;
+	
+}
+.button1{
+	margin-left: 170px;
+}
