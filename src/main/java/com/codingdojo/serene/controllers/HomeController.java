@@ -88,12 +88,15 @@ public class HomeController {
 	}
 	@RequestMapping("/post/new")
 	public String newName(@ModelAttribute("post") Post post, Model model, HttpSession session ) {
+		if(session.getAttribute("userId") == null) {
+			return "redirect:/";
+		}
 		User user = userService.findById((Long)session.getAttribute("userId"));
 		model.addAttribute("user", user);
 		return "new.jsp";
 	}
 	@PostMapping("/post/news")
-	public String addShow(@Valid @ModelAttribute("post") Post post, BindingResult result,Model model) {
+	public String addPost(@Valid @ModelAttribute("post") Post post, BindingResult result,Model model) {
 		if (result.hasErrors()) {
     		return "new.jsp";
     	}
