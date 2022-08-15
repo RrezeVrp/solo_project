@@ -147,10 +147,16 @@ public class HomeController {
 	 }
 	@RequestMapping("/about")
 	public String about(HttpSession session) {
+		if(session.getAttribute("userId") == null) {
+			return "redirect:/";
+		}
 		return "about.jsp";
 	}
 	@RequestMapping("/team")
 	public String team(HttpSession session) {
+		if(session.getAttribute("userId") == null) {
+			return "redirect:/";
+		}
 		return "team.jsp";
 	}
 	
